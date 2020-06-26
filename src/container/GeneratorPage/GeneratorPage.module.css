@@ -1,0 +1,24 @@
+
+
+.Button{
+    
+    clear: both;
+    vertical-align: bottom;
+    /* float: left; */
+    text-align: center;
+    background-color: lightblue;
+    border: 3px solid gray;
+    color: black;
+    font: inherit;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+
+}
+
+.Button:hover{
+    background-color: lightgreen;
+}
