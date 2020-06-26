@@ -1,19 +1,22 @@
 import React,{Component} from 'react';
 import classes from './GeneratorPage.module.css';
 import NumberBlocks from '../../components/NumberBlocks/NumberBlocks';
+import Button from '../../components/Button/Button';
+
 
 class GeneratorPage extends Component {
 
     state = {
-        numbers: {
-            first : 0,
-            second : 0,
-            third : 0,
-            fourth : 0,
-            fifth : 0,
-            sixth : 0,
-            seventh: 0,
-        }
+        // numbers: {
+        //     first : 0,
+        //     second : 0,
+        //     third : 0,
+        //     fourth : 0,
+        //     fifth : 0,
+        //     sixth : 0,
+        //     seventh: 0,
+        // }
+        numbers:[0,0,0,0,0,0,0]
 
     }
 
@@ -32,7 +35,8 @@ class GeneratorPage extends Component {
         return(
             <div>
                 <NumberBlocks newnumbers = {this.state.numbers}/>
-                <button className = {classes.Button} onClick = {this.newNumbers}> Good Luck</button> 
+                <Button clicked = {this.newNumbers}>Good Luck</Button>
+                {/* <button className = {classes.Button} onClick = {this.newNumbers}> Good Luck</button>  */}
             </div>
         );
     }
